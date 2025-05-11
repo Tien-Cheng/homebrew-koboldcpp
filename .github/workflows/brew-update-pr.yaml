@@ -1,0 +1,21 @@
+name: Bump Homebrew Formulae
+
+on:
+  schedule:
+    - cron: "0 8 * * *"  # Runs daily at 8am UTC
+  workflow_dispatch:      # Allow manual triggering
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update Homebrew Formulae
+        uses: dawidd6/action-homebrew-bump-formula@v3
+        with:
+          tap: ${{ github.repository }}
+          # Required, custom personal GitHub access token with only the 'public_repo' scope enabled
+          token: ${{secrets.PAT}}
+          # Optional, if don't want to check for already open PRs
+          force: false # true
+          # Need to set this input if want to use `brew livecheck`
+          livecheck: true
