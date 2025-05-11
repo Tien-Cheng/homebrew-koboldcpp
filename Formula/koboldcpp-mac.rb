@@ -1,7 +1,7 @@
 class KoboldcppMac < Formula
   desc "KoboldCpp (macOS ARM64): AI text-generation for GGML & GGUF models"
   homepage "https://github.com/LostRuins/koboldcpp"
-  version "1.91"
+  version "1.90.2"
   license "AGPL-3.0-only"
 
   url "https://github.com/LostRuins/koboldcpp/releases/download/v#{version}/koboldcpp-mac-arm64"
