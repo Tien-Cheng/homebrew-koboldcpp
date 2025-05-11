@@ -14,7 +14,7 @@ jobs:
         with:
           tap: ${{ github.repository }}
           # Required, custom personal GitHub access token with only the 'public_repo' scope enabled
-          token: ${{secrets.PAT}}
+          token: ${{ secrets.GITHUB_TOKEN }}
           # Optional, if don't want to check for already open PRs
           force: false # true
           # Need to set this input if want to use `brew livecheck`
