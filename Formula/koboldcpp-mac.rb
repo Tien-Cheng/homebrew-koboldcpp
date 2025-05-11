@@ -4,15 +4,15 @@ class KoboldcppMac < Formula
   version "1.91"
   license "AGPL-3.0-only"
 
-  if Hardware::CPU.arm?
-    url "https://github.com/LostRuins/koboldcpp/releases/download/v#{version}/koboldcpp-mac-arm64"
-    sha256 "e0954ad0ce74f2b55a6420e6e7e0d6557cabdaa3a50a560b6ef64941a70a085d"
-  else
-    odie "This formula is for macOS ARM64 only."
-  end
 
-  def install
-    bin.install "koboldcpp-mac-arm64" => "koboldcpp"
+  on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/LostRuins/koboldcpp/releases/download/v#{version}/koboldcpp-mac-arm64"
+      sha256 "e0954ad0ce74f2b55a6420e6e7e0d6557cabdaa3a50a560b6ef64941a70a085d"
+      def install
+        bin.install "koboldcpp-mac-arm64" => "koboldcpp"
+      end
+    end
   end
 
   test do
