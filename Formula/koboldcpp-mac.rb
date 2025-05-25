@@ -1,11 +1,11 @@
 class KoboldcppMac < Formula
   desc "KoboldCpp (macOS ARM64): AI text-generation for GGML & GGUF models"
   homepage "https://github.com/LostRuins/koboldcpp"
-  version "1.91"
+  version "1.92.1"
   license "AGPL-3.0-only"
 
-  url "https://github.com/LostRuins/koboldcpp/releases/download/v1.91/koboldcpp-mac-arm64"
-  sha256 "e0954ad0ce74f2b55a6420e6e7e0d6557cabdaa3a50a560b6ef64941a70a085d"
+  url "https://github.com/LostRuins/koboldcpp/releases/download/v1.92.1/koboldcpp-mac-arm64"
+  sha256 "4919e69da83a09f888729a3bc6dddc83a99fa1bdd8a6f296d955f9437db379d8"
 
   on_macos do
     if Hardware::CPU.arm?
