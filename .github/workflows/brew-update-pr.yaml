@@ -1,6 +1,9 @@
 name: Bump Homebrew Formulae
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: "0 8 * * *"  # Runs daily at 8am UTC
   workflow_dispatch:      # Allow manual triggering
