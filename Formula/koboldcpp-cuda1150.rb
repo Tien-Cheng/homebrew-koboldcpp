@@ -5,7 +5,7 @@ class KoboldcppCuda1150 < Formula
   license "AGPL-3.0-only"
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/LostRuins/koboldcpp/releases/download/v%VERSION%/koboldcpp-linux-x64-cuda1150"
+    url "https://github.com/LostRuins/koboldcpp/releases/download/v1.92.1/koboldcpp-linux-x64-cuda1150"
     sha256 "2574c1b270164f277038dc5b1cb651447751440c1d0cd925eabf54544f01be54"
   else
     odie "This formula is for Linux x86_64 only."

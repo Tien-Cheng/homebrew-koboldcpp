@@ -4,7 +4,7 @@ class KoboldcppMac < Formula
   version "1.92.1"
   license "AGPL-3.0-only"
 
-  url "https://github.com/LostRuins/koboldcpp/releases/download/v%VERSION%/koboldcpp-mac-arm64"
+  url "https://github.com/LostRuins/koboldcpp/releases/download/v1.92.1/koboldcpp-mac-arm64"
   sha256 "4919e69da83a09f888729a3bc6dddc83a99fa1bdd8a6f296d955f9437db379d8"
 
   on_macos do
