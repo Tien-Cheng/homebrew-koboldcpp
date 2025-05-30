@@ -5,7 +5,7 @@ class KoboldcppNocuda < Formula
   license "AGPL-3.0-only"
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/LostRuins/koboldcpp/releases/download/v1.91/koboldcpp-linux-x64-nocuda"
+    url "https://github.com/LostRuins/koboldcpp/releases/download/v%VERSION%/koboldcpp-linux-x64-nocuda"
     sha256 "358e4216abd13be59d1bd87a805fc5d88ca44d9ef8de47d7ee87518943454949"
   else
     odie "This formula is for Linux x86_64 only."
