@@ -1,18 +1,18 @@
 class KoboldcppCuda1150 < Formula
-  desc "KoboldCpp (Linux, CUDA 11.5): AI text-generation for GGML & GGUF models"
+  desc "KoboldCpp (Linux, CUDA 11.5 - Old PC): AI text-generation for GGML & GGUF models"
   homepage "https://github.com/LostRuins/koboldcpp"
   version "1.93"
   license "AGPL-3.0-only"
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/LostRuins/koboldcpp/releases/download/v1.93/koboldcpp-linux-x64-cuda1150"
-    sha256 "b03adf80bbd3007c12215cd8cd08d20437a84f5c0f1ce36608e51f2f28c03b9d"
+    url "https://github.com/LostRuins/koboldcpp/releases/download/v1.93/koboldcpp-linux-x64-oldpc"
+    sha256 "2574c1b270164f277038dc5b1cb651447751440c1d0cd925eabf54544f01be54"
   else
     odie "This formula is for Linux x86_64 only."
   end
 
   def install
-    bin.install "koboldcpp-linux-x64-cuda1150" => "koboldcpp"
+    bin.install "koboldcpp-linux-x64-oldpc" => "koboldcpp"
   end
 
   test do
