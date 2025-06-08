@@ -1,5 +1,5 @@
-class KoboldcppCuda1150 < Formula
-  desc "KoboldCpp (Linux, CUDA 11.5 - Old PC): AI text-generation for GGML & GGUF models"
+class KoboldcppOldpc < Formula
+  desc "KoboldCpp Old PC: AI text-generation for GGML & GGUF models (CUDA 11, older PCs)"
   homepage "https://github.com/LostRuins/koboldcpp"
   version "1.93"
   license "AGPL-3.0-only"
