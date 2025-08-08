@@ -1,12 +1,12 @@
 class Koboldcpp < Formula
   desc "KoboldCpp: AI text-generation for GGML & GGUF models (CUDA 12.4, modern PCs)"
   homepage "https://github.com/LostRuins/koboldcpp"
-  version "1.95.1"
+  version "1.97.1"
   license "AGPL-3.0-only"
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/LostRuins/koboldcpp/releases/download/v1.95.1/koboldcpp-linux-x64"
-    sha256 "df39276608f3850c86124ec376a05cde99782cd072ed94c3eaddba4c9f8b697f"
+    url "https://github.com/LostRuins/koboldcpp/releases/download/v1.97.1/koboldcpp-linux-x64"
+    sha256 "065be37c31b49474e2e8bd442829fc159912efa8da8fc9099d276a43d418bebe"
   else
     odie "This formula is for Linux x86_64 only."
   end
